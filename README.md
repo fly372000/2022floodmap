@@ -1,4 +1,6 @@
 # 2022floodmap
 webgis毕业设计
-运行
+# 依赖安装
+npm install
+# 运行
 npm run dev
