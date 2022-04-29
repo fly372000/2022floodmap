@@ -1,0 +1,29 @@
+/* 隐藏右侧滚动条 */
+@mixin no_scrollbar {
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow: -moz-hidden-unscrollable;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0 !important;
+    }
+}
+
+/* 自定义右侧滚动条 */
+@mixin zdy_scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e5e5 #f7f7f9;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+        background-color: #f5f5f5;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(101, 45, 190, 0.362);
+        border-radius: 10px;
+    }
+}
